@@ -1,0 +1,56 @@
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin: 0 5px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-nav,
+    .footer-info,
+    .footer-logo,
+    .footer-social {
+        margin-bottom: 10px;
+    }
+    
+    .footer-logo img {
+        width: 80px;
+    }
+    
+    .footer-social img {
+        width: 20px;
+        height: 20px;
+    }
+}
+

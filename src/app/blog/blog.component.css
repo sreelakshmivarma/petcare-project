@@ -1,0 +1,227 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.highlight {
+    position: relative; /* Needed for the absolute positioning of the ::after element */
+    display: inline-block; /* Ensures the ::after pseudo-element is positioned relative to the text */
+}
+
+.highlight::after {
+    content: ""; 
+    position: absolute;
+    left: 20;
+
+    bottom:0 ; 
+    width: 100%; 
+    height: 0.5em; /* Thickness of the line */
+    background-color: orange; /* The orange color for the line */
+    
+}
+
+.feedback-section {
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.feedback-section h2,
+.feedback-section p {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.feedback-section h2 {
+    margin-bottom: 20px;
+}
+
+.feedback-section p {
+    margin-bottom: 40px;
+}
+
+
+.card {
+    border: none;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.font-weight-bold {
+    font-size: 18px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.padd{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+.pagination > li {
+    
+    width: 8vw;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    padding-top: 5vh;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    padding-top: 1rem;
+}
+
+.arrow {
+    max-width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+
+    
+}
+h6{
+    font-weight: bold;
+}
+
+.article-image-1,
+.article-image-2 {
+  
+   width: 100%;
+   height: 100%;
+
+    
+    
+}
+
+.bg {
+    background-color: #80ccd4;
+    height: 40px;
+    border-radius: 0;
+}
+
+@media (max-width: 1399px){
+      .article{
+        margin-left: 20%;
+      }
+
+}
+
+@media (max-width: 768px) {
+    .pagination > li {
+        width: 15vw;
+        margin: 0.5rem;
+        padding-top: 3vh;
+    }
+
+    .arrow {
+        max-width: 80%;
+    }
+
+    .card {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .article {
+        padding-left: 2%;
+    }
+
+    .article-image-1,
+    .article-image-2 {
+        height: 180px;
+        width: 180px;
+    }
+   
+
+    hr {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .pagination > li {
+        width: 20vw;
+        margin: 0.25rem;
+        padding-top: 2vh;
+    }
+
+    .arrow {
+        max-width: 70%;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+    }
+
+    .card-body1 h6,
+    .card-body1 p {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .article-image-1,
+    .article-image-2 {
+        height: 180px;
+        width: 180px;
+    }
+   
+  
+}
+.dots {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    position: relative;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dot1{
+    background-color: rgb(85, 164, 216);
+}
+.dot3{
+    background-color: rgb(234, 226, 226);
+}
